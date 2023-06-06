@@ -1,0 +1,28 @@
+/*.conteiner-grid {
+  display: grid;
+
+  background-color: whitesmoke;
+  padding: 10px;
+  column-gap: 10px;
+}
+
+.conteiner-grid > header {
+    grid-column: 1/4;
+    background-color: white;
+    border: 1px solid gainsboro;
+    font-size: 50px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    padding: 10px;
+}    
+
+.conteiner-grid > footer {
+    grid-column: 1/4;
+    background-color: white;
+    border: 1px solid gainsboro;
+    font-size: 20px;
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif ;
+    padding: 10px;
+}*/
+
