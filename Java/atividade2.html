@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Verificar Maior Numero</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        #resultado {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificando o maior número</title>
 </head>
 <body>
-  <label for="numero1">Numero 1:</label>
-  <input type="number" id="numero1">
-  <br>
-  <label for="numero2">Numero 2:</label>
-  <input type="number" id="numero2">
-  <br>
-  <label for="numero3">Numero 3:</label>
-  <input type="number" id="numero3">
-  <br>
-  <button onclick="verificarMaiorNumero()">Verificar</button>
-  <br>
-  <p id="resultado"></p>
-  <script>/../Java/atividade2.js</script>
+   <h1>Identificando o maior número</h1> 
+   <script src="../../PROJETOS VSCODE/Java/scripts/atividade2.js"></script>
+   <input type="number" id="numero1">
+   <input type="number" id="numero2">
+   <input type="number" id="numero3">
+   <button onclick="verificarMaior()">Verificar Maior</button>
+   <p id="resultado"></p>
 </body>
 </html>

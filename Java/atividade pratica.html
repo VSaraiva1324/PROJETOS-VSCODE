@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          text-align: center;
+        }
+    
+        h1 {
+          text-align: center;
+        }
+    
+        label {
+          font-weight: bold;
+        }
+    
+        input[type="number"],
+        input[type="text"] {
+          width: 150px;
+          padding: 5px;
+          margin-bottom: 10px;
+        }
+    
+        input[type="radio"],
+        input[type="checkbox"] {
+          margin-right: 5px;
+        }
+    
+        button {
+          padding: 10px 20px;
+          font-weight: bold;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+    
+        button:hover {
+          background-color: #45a049;
+        }
+      </style>
+    <script>
+        function calcular() {
+            var quantidade = parseInt (document.getElementById("quantidade").value);
+            var tipoSuco = document.querySelector('input[name = "suco"]:checked').value;
+            var usarAcucar = document.getElementById("acucar").checked;
+            var usarGelo = document.getElementById("gelo").checked;
+
+            var agua;
+            var suco;
+
+            if (tipoSuco === "maracuja") {
+                agua = 6 * quantidade;
+                suco = 4 * quantidade;
+            } else if (tipoSuco === "caju") {
+                agua = 8 * quantidade;
+                suco = 2 * quantidade;
+            }else if (tipoSuco === "goiaba") {
+                agua = 5 * quantidade;
+                suco = 5 * quantidade;
+            }
+
+            if (usarAcucar) {
+                agua -= agua * 0.02;
+            }
+
+            if (usarGelo) {
+                agua -= agua * 0.05
+            }
+
+            document.getElementById("agua").value = agua;
+            document.getElementById("suco").value = suco;
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Refrescos</h1>
+    <label for="quantidade">Quantos litros de refresco deseja fazer?</label>
+    <input type="number" id="quantidade">
+    <br>
+    <br>
+    <label>Escolha o tipo de suco:
+    <br>
+    <input type="radio" name="suco" value="maracuja">Maracujá
+    <input type="radio" name="suco" value="caju">Caju
+    <input type="radio" name="suco" value="goiaba">Goiaba
+    <br>
+    <br>
+    <label>Itens extras a utilizar:
+    <input type="checkbox" id="acucar">Açúcar
+    <input type="checkbox" id="gelo">Gelo
+    <br>
+    <br>
+    <button onclick="calcular()">Calcular</button>
+    <br>
+    <br>
+    <label for="agua">Quantidade de Água:</label>
+    <input type="text" id="agua" readonly>
+    <br>
+    <label for="suco">Quantidade de Suco:</label>
+    <input type="text" id="suco" readonly>
+</body>
+</html>
