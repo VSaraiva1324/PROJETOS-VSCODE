@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal</title>
+    <style>
+         <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+
+            
+        }
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+
+           
+        }
+
+        h3{
+            text-align: center;
+            margin-top: 0;
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        
+        p {
+            text-align: justify;
+    
+        }
+        
+        fieldset {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #007bff;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: darkblue;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        button a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <h1>Minha Página Pessoal do Vinícius Oliveira Saraiva</h1>
+    <img src="c:\Users\Vinicius Saraiva\Downloads\WhatsApp Image 2023-05-17 at 10.13.22.jpeg" 
+    alt="eu mesmo" width="150" height="200">
+    <h2>Disciplina de Programação I</h2>
+    <p>&nbsp;</p>
+    <fieldset>
+        <h3>Sobre Mim:</h3>
+        <p>Meu nome é Vinícius Oliveira Saraiva. Tenho 18 anos e 
+        moro em Ariquemes desde que nasci. Estou cursando Análise e Desenvolvimento de Sistemas 
+        no IFRO e estou no primeiro período. Nunca estudei nada sobre programação,
+        mas sempre achei muito interessante quem trabalha com isso.
+        Antigamente, tentei aprender a criar jogos sozinho em casa, 
+        mas não deu muito certo hahaha. Então, no final de 2022,
+        depois de terminar o ensino médio, um amigo me recomendou 
+        o curso do IFRO, falando que era muito bom e que tinha bons
+        professores. Então decidi tentar a sorte e agora estou aqui.
+        Não sei muito ainda, mas ultimamente, venho tentando muito
+        aprender HTML, CSS E JavaScript e estou adorando muito.</p>
+    </fieldset>
+    <p>&nbsp;</p>
+    <fieldset>
+        <h3>Alguns exemplos estudados em sala:</h3>
+        <p>&nbsp;</p>
+        <button><a href="Lista.html">Lista</a></button>
+        <button><a href="formulario1.html">Form. I</a></button>
+        <button><a href="formulario2.html">Form. II</a></button>
+        <button><a href="midias.html">Midias</a></button>
+        <button><a href="tabela.html">Tabela</a></button>
+    </fieldset>  
+    <p>&nbsp;</p>  
+    <fieldset>
+        <h3>Algumas atividades:</h3>
+        <p>&nbsp;</p>
+        <button><a href="Java/ATIVIDADE1.HTML">Atividade I </a></button>
+        <button><a href="Java/ATIVIDADE2.HTML">Atividade II</a></button>
+        <button><a href="Java/ATIVIDADE3.HTML">Atividade III</a></button>
+    </fieldset>
+
+    <script>
+        var button = document.querySelector('button');
+        button.addEventListener('click', function() {
+            alert('Você clicou no botão!');
+        });
+    </script>
+</body>
+</html>
